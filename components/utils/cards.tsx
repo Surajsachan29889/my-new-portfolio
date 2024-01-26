@@ -26,10 +26,10 @@ const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img
                 })}
             </div>
             <div>
-                <h1 className='text-[1.5rem] w-[50%] font-bold'>{projectname}</h1>
+                <h1 className='text-[1.5rem] sm:w-[50%] w-[100%] font-bold'>{projectname}</h1>
             </div>
-            <div className='w-[50%] h-[20vh] overflow-hidden '>
-                <p className='text-[1vw] font-medium'>{desp}</p>
+            <div className='sm:w-[50%] w-[100%] h-[20vh] overflow-hidden '>
+                <p className='sm:text-[1vw] text-[1rem] font-medium '>{desp}</p>
             </div>
             <div>
                 <Link href={link}>
@@ -39,9 +39,9 @@ const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img
                 </Link>
             </div>
 
-            <div className={` ${alignment == "right" ? "right-[-3%] arrow h-[6vh] absolute w-[2.5rem] bg-tri" : "left-[-3%] arrow h-[6vh] absolute w-[2.5rem] bg-tri"}`}></div>
+            <div className={` ${alignment == "right" ? "right-[-3%] arrow h-[6vh] absolute w-[2.5rem] bg-tri" : "left-[-3%] arrow h-[6vh] absolute w-[2.5rem] bg-tri"} sm:block hidden `}></div>
             
-                <img src={img} alt="project Image" className='absolute h-[35vh] w-[45%] border-[10px] border-white shadow-lg rounded-xl botton-[-1%] img right-[0%]' />
+                <img src={img} alt="project Image" className='absolute sm:block hidden h-[35vh] w-[45%] border-[10px] border-white shadow-lg rounded-xl botton-[-1%] img right-[0%]' />
         </div>
     );
 };
