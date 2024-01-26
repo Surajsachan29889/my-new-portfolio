@@ -11,16 +11,17 @@ interface Props {
     projectname: string;
     desp: string;
     link: string;
-    img:string
+    img:string;
+    btncolor:string;
 }
 
-const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img }) => {
+const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img, btncolor }) => {
     return (
-        <div className={`h-[40vh] relative w-[40%] card  flex flex-col gap-2 bg-tri rounded-lg ${alignment === "right" ? "border-pri" : "border-four"} border-t-[4px] px-[2rem] py-[1.5rem]  `}>
+        <div className={`h-[40vh] relative w-[100%] card  flex flex-col gap-2 bg-tri rounded-lg ${alignment === "right" ? "border-pri" : "border-four"} border-t-[4px] px-[2rem] py-[1.5rem]  `}>
             <div className='flex gap-5'>
                 {skills.map((sk, idx) => {
                     return (
-                        <div key={idx} className={`shadow text-white  font-bold h-[2.5rem] px-[2rem] flex justify-center items-center rounded-full ${alignment === "right" ? "bg-four" : "bg-pri"}`} >{sk}</div>
+                        <div key={idx} className={`shadow text-white  font-bold h-[2.5rem] px-[2rem] flex justify-center items-center rounded-full ${alignment !== "right" ? "bg-four" : "bg-pri"}`} >{sk}</div>
                     )
                 })}
             </div>
@@ -32,7 +33,7 @@ const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img
             </div>
             <div>
                 <Link href={link}>
-                    <Button color="danger">
+                    <Button color="danger" style={{backgroundColor:btncolor}}>
                         <span><BsGithub /></span> View Source Code
                     </Button>
                 </Link>

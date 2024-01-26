@@ -1,9 +1,7 @@
 'use client';
-import Image from "next/image";
 import dynamic from 'next/dynamic'
 import Loading from "./loading";
 import {NextUIProvider} from "@nextui-org/react";
-
 const Navbar = dynamic(() => import('@/components/utils/navbar'),
     {
         loading: ()=> <Loading/> 
@@ -33,7 +31,6 @@ export default function Home() {
   return (
    <div className="min-h-screen w-full">
     <NextUIProvider>
-
       <Navbar/>
       <Hero/>
       <About/>

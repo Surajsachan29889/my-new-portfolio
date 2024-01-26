@@ -26,14 +26,30 @@ body{
 
   transition: .5s ;
 }
-.card:hover{
+.card:hover {
   box-shadow: 10px 10px black;
   transform: translateX(-10px);
 }
-.img{
-  transform: rotate(20deg);
+
+.card:hover .img {
+  transform: rotate(0deg);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
 }
 
+.img{
+  transform: rotate(20deg);
+  transition: .5s;
+}
+
+.timeline svg {
+  height: 40px;
+  width: 40px;
+}
+.card svg{
+  height: 20px;
+  width: 20px;
+}
 /* HTML:  */
 .loader {
   width: 50px;
