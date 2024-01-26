@@ -2,32 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Signika Negative';
+  src: url('../font/Signika_Negative/SignikaNegative-VariableFont_wght.ttf') format('truetype'); 
+  font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+body{
+  font-family: 'Signika Negative', sans-serif !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.shadow{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.arrow{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
 }
+.card{
+
+  transition: .5s ;
+}
+.card:hover{
+  box-shadow: 10px 10px black;
+  transform: translateX(-10px);
+}
+.img{
+  transform: rotate(20deg);
+}
+
+/* HTML:  */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  color: #f03355;
+  --_c:no-repeat radial-gradient(farthest-side,currentColor 92%,#0000);
+  background: 
+    var(--_c) 50% 0   /12px 12px,
+    var(--_c) 50% 100%/12px 12px,
+    var(--_c) 100% 50%/12px 12px,
+    var(--_c) 0    50%/12px 12px,
+    var(--_c) 50%  50%/12px 12px,
+    conic-gradient(from 90deg at 4px 4px,#0000 90deg,currentColor 0)
+    -4px -4px/calc(50% + 2px) calc(50% + 2px);
+  animation: l8 1s infinite linear;
+}
+@keyframes l8 {to{transform: rotate(.5turn)}}
