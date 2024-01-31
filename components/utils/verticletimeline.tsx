@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import React,{useEffect} from 'react'
 import Cards from './cards'
@@ -154,12 +154,12 @@ function Timeline() {
   return (
     <div className='h-[200vh] relative overflow-hidden' >
       <div className='flex justify-center items-center'>
-        <h1 className=' font-extrabold text-6xl text-four '> <span className='text-pri'>P</span>rojects <span className='text-pri'>:</span></h1>
+        <h1 className=' font-extrabold text-6xl text-four '> <span className='text-pri'>P</span>rojects</h1>
       </div>
       <div className='sm:w-[.5%] w-[2%] h-[190vh] absolute top-[15vh] left-[50%]  bg-tri'></div>
       <div className=' timeline flex flex-col'>
         <div className='absolute flex sm:left-[9%] left-[9.5%] w-[100%] sm:top-[14%] top-[10%] '>
-          <div className='sm:w-[41%] w-[90%]  card1'>
+          <div className='sm:w-[41%] w-[80%]  card1'>
 
           <Cards
             alignment='right'
@@ -171,7 +171,7 @@ function Timeline() {
             btncolor='#FF7BA9'
           />
           </div>
-          <div className='ml-[3%] w-[70%]'>
+          <div className='ml-[3%] w-[70%] sm:block hidden'>
 
             <Checkpoints
               icon={<FaNodeJs />}
@@ -220,7 +220,7 @@ function Timeline() {
             btncolor='#FF7BA9'
           />
           </div>
-          <div className='ml-[3%] w-[70%]'>
+          <div className='ml-[3%] w-[70%] sm:block hidden'>
 
             <Checkpoints
               icon={<FontAwesomeIcon icon={faCoffee} />}

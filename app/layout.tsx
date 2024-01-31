@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
-
+import ThemeContextProvider from "@/context/theme-context";
+import ThemeSwitch from "@/components/utils/theme-btn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ActiveSectionContextProvider>
-        {children}
-      </ActiveSectionContextProvider>
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            {children}
+          </ActiveSectionContextProvider>
+          <ThemeSwitch/>
+        </ThemeContextProvider>
         </body>
     </html>
   );

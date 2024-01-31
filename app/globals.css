@@ -68,3 +68,90 @@ body{
   animation: l8 1s infinite linear;
 }
 @keyframes l8 {to{transform: rotate(.5turn)}}
+
+/*  */
+
+.icon {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  --transition-duration: 500ms;
+  --transition-easing: ease-out;
+  transition: transform var(--transition-duration) var(--transition-easing);
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.7);
+    width: 60%;
+    height: 100%;
+    top: 0%;
+    transform: skew(45deg);
+    position: absolute;
+    animation: shining 2s infinite ; /* Continuous shining animation */
+  }
+  /*  */
+  /* &:hover {
+    transform: translateY(-25%)  } */
+}
+@keyframes shining {
+  0% {
+    left: -125%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+.icon-shadow{
+  box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.378);
+}
+.bigblock {
+  animation: bigB 20s infinite ease-in-out;
+
+}
+.smallblock{
+  animation: smallB 5s infinite ease-in-out;
+
+}
+.bigcircle{
+  animation: bigC 20s infinite ease-in-out;
+
+}
+.midblock{
+  animation: midB 15s infinite ease-in-out;
+
+}
+@keyframes bigC {
+  0%, 100% {
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+}
+@keyframes smallB {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(100px) rotate(360deg);
+  }
+}
+@keyframes midB {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(100px) rotate(360deg);
+  }
+}
+@keyframes bigB {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}

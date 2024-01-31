@@ -21,7 +21,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="w-full min-h-[100vh]  text-center sm:mb-0 mt-[20vh]"
+      className="w-full h-[100vh]  text-center sm:mb-0 sm:mt-0 mt-[20vh]"
     >
         <div className="h-[40%] w-[30%] z-[-100] absolute top-[40%] blur-[150px] bg-pri "></div>
         <div className="h-[40%] w-[30%] absolute z-[-100] top-[40%] blur-[150px] bg-four right-0 "></div>
@@ -124,7 +124,7 @@ export default function Intro() {
         </Suspense>
         <div className="h-[20%] w-full flex justify-center items-center ">
 
-        <div className="w-[.5%] h-[10vh] mt-[5%] rounded-full  bg-[#cacaca69]  drop-shadow-md "></div>
+        <div className="w-[.5%] h-[10vh] mt-[5%] rounded-full sm:block hidden  bg-[#cacaca69]  drop-shadow-md "></div>
         </div>
     </section>
   );

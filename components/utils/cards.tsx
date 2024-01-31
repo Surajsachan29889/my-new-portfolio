@@ -21,19 +21,19 @@ const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img
             <div className='flex gap-5'>
                 {skills.map((sk, idx) => {
                     return (
-                        <div key={idx} className={`shadow text-white  font-bold h-[2.5rem] px-[2rem] flex justify-center items-center rounded-full ${alignment !== "right" ? "bg-four" : "bg-pri"}`} >{sk}</div>
+                        <div key={idx} className={`shadow text-white dark:text-black  font-bold sm:h-[2.5rem] px-[1rem] sm:px-[2rem] flex justify-center items-center rounded-full ${alignment !== "right" ? "bg-four" : "bg-pri"}`} >{sk}</div>
                     )
                 })}
             </div>
             <div>
-                <h1 className='text-[1.5rem] sm:w-[50%] w-[100%] font-bold'>{projectname}</h1>
+                <h1 className='text-[1.5rem] dark:text-black sm:w-[50%] w-[100%] font-bold'>{projectname}</h1>
             </div>
             <div className='sm:w-[50%] w-[100%] h-[20vh] overflow-hidden '>
-                <p className='sm:text-[1vw] text-[1rem] font-medium '>{desp}</p>
+                <p className='sm:text-[1vw]  text-[.8rem] dark:text-black font-medium '>{desp}</p>
             </div>
             <div>
                 <Link href={link}>
-                    <Button color="danger" style={{backgroundColor:btncolor}}>
+                    <Button color="danger" className='dark:text-black' style={{backgroundColor:btncolor}}>
                         <span><BsGithub /></span> View Source Code
                     </Button>
                 </Link>
