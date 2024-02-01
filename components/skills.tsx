@@ -27,10 +27,10 @@ function Skills() {
     return (
         <section className='min-h-[100vh] w-full relative overflow-hidden'  ref={ref} id='skills' >
             {/* <Image src={back} alt="skill-background" className='absolute back z-[-100] top-0 h-[100%] w-full ' /> */}
-            <div className='sm:h-[20vh] h-[10vh] sm:w-[10%] w-[15%] bg-pri rounded-lg bigblock absolute top-[50%] left-[80%] '></div>
+            <div className='sm:h-[20vh] h-[10vh] sm:block hidden sm:w-[10%] w-[15%] bg-pri rounded-lg bigblock absolute top-[50%] left-[80%] '></div>
             <div className='h-[5vh] w-[2.5%] sm:block hidden bg-four midblock absolute top-[30%] left-[90%] '></div>
             <div className='h-[2vh] w-[1%] sm:block hidden bg-black dark:bg-white smallblock absolute top-[70%] left-[90%] '></div>
-            <div className='sm:h-[30vh] h-[15vh] sm:w-[15%] w-[25%] bg-four rounded-full bigcircle  absolute top-[10%] left-[10%] '></div>
+            <div className='sm:h-[30vh] h-[15vh] sm:block hidden sm:w-[15%] w-[25%] bg-four rounded-full bigcircle  absolute top-[10%] left-[10%] '></div>
             <div className='h-[2vh] w-[1%] sm:block hidden bg-pri smallblock rounded-full absolute top-[30%] left-[10%] '></div>
             <div className='h-[5vh] w-[2.5%] sm:block hidden bg-tri rounded-full midblock absolute top-[10%] left-[28%] '></div>
             <div className='flex flex-col'>
