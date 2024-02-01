@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function Stickysocail() {
   return (
-    <div className='h-[35vh] w-[5%] z-[10000] gap-6 dark:border-[2px] dark:border-[grey]  sm:flex hidden  rounded-full justify-center items-center bg-white dark:bg-black shadow-lg sticky top-[33%] left-8  flex-col' >
+    <div className='h-[35vh]  w-[5%] z-[100] gap-6 dark:border-[2px] dark:border-[grey]  sm:flex hidden  rounded-full justify-center items-center bg-white dark:bg-black shadow-lg sticky top-[33%] left-8  flex-col' >
         {
             social.map((handels,idx)=>{
                 return(
