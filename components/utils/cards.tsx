@@ -17,7 +17,7 @@ interface Props {
 
 const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img, btncolor }) => {
     return (
-        <div className={`h-[40vh] relative w-[100%] card  flex flex-col gap-2 bg-tri rounded-lg ${alignment === "right" ? "border-pri" : "border-four"} border-t-[4px] px-[2rem] py-[1.5rem]  `}>
+        <div className={`h-[40vh] relative w-[100%] card  flex flex-col gap-2 bg-tri  rounded-lg ${alignment === "right" ? "border-pri" : "border-four"} border-t-[4px] px-[2rem] py-[1.5rem]  `}>
             <div className='flex gap-5'>
                 {skills.map((sk, idx) => {
                     return (
@@ -39,7 +39,7 @@ const Cards: React.FC<Props> = ({ alignment, skills, projectname, desp, link,img
                 </Link>
             </div>
 
-            <div className={` ${alignment == "right" ? "right-[-3%] arrow h-[6vh] absolute w-[2.5rem] bg-tri" : "left-[-3%] arrow h-[6vh] absolute w-[2.5rem] bg-tri"} sm:block hidden `}></div>
+            <div className={` ${alignment == "right" ? "right-[-3%]  dark:border-black/40 dark:bg-opacity-100 arrow h-[6vh] absolute w-[2.5rem] bg-tri" : "left-[-3%] arrow h-[6vh] absolute w-[2.5rem] bg-tri"} sm:block hidden `}></div>
             
                 <img src={img} alt="project Image" className='absolute sm:block hidden h-[35vh] w-[45%] border-[10px] border-white shadow-lg rounded-xl botton-[-1%] img right-[0%]' />
         </div>
