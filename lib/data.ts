@@ -43,7 +43,7 @@ export const links = [
       icon: "/mongo-db.png"
     },
     {
-      name: "Tailwind CSS",
+      name: "Tailwind",
       icon: "/tailwind-css.svg"
     },
     {

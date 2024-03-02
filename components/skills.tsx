@@ -18,15 +18,15 @@ function Skills() {
                 </div>
                 <div className='h-[80vh] flex justify-center items-center '>
                     <div className='h-[70vh] w-[70%] flex justify-center sm:pl-0  items-center' >
-                        <div className=' h-[55vh] w-[70%] grid sm:grid-rows-3 sm:gap-5 gap-4 grid-rows-5 grid-flow-col g'>
+                        <div className=' h-[55vh] w-[70%] pr-[15rem] grid sm:grid-rows-3 sm:gap-5 gap-4 grid-rows-5 grid-flow-col g'>
                             {                               
                                 skills.map((skill,idx)=>{
                                     return(
-                                            <div className='flex flex-col  items-center justify-center h-[7rem] w-[7rem] bg-tri dark:bg-tri dark:border-black/40 dark:bg-opacity-75 rounded-xl shadow-xl '>
-                                                <div className=' sm:-[5.5rem] w-[3.5rem] flex justify-center items-center sm:h-[5.5rem] h-[3.5rem] '>
+                                            <div className='flex flex-col   items-center justify-center lg:h-[7rem] h-[2rem] lg:w-[7rem]  bg-tri dark:bg-tri  border-[1.5px] border-black/40 dark:bg-opacity-75 lg:rounded-xl rounded-3xl shadow-xl '>
+                                                <div className=' sm:-[5.5rem] w-[3.5rem]  justify-center items-center sm:h-[5.5rem] h-[3.5rem] lg:flex hidden '>
                                                     <img src={skill.icon} alt='skill-icon'/>
                                                 </div>
-                                                <span className='font-bold sm:block hidden dark:text-[black]'>{skill.name}</span>
+                                                <span className='font-bold sm:text-[1rem] text-[.8rem] p-[10px] dark:text-[black]'>{skill.name}</span>
                                             </div>
                                         
                                     )
