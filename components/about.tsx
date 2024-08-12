@@ -4,7 +4,7 @@ import React from 'react'
 import { useSectionInView } from "@/lib/hooks";
 import DotGrid from './utils/dotgrid';
 import Image from 'next/image';
-import myphoto from '@/public/myphoto.png'
+import myphoto from '@/public/Suraj Sachan-Photoroom.png'
 
 function About() {
   const { ref } = useSectionInView("About");
@@ -23,7 +23,7 @@ function About() {
 
               <h1 className='lg:text-6xl text-[2rem] text-pri  font-extrabold'><span className=' text-four '>About</span> Me <span className='text-pri'>:</span></h1>
             </div>
-            <p className=' sm:font-medium font-bold sm:text-[1.2vw] text-[2.4vw] ' style={{zIndex:1}}>Hello, my name is Suraj Sachan and I am a B.Tech IT student expected to graduate in 2025. I am passionate about web development and have honed my skills in this area. I enjoy creating dynamic and user-friendly websites that engage audiences and deliver a great user experience.
+            <p className=' sm:font-medium font-bold sm:text-[1.2vw] text-[2.4vw] bg-tri p-[2%] rounded-2xl shadow-2xl ' style={{zIndex:1}}>Hello, my name is Suraj Sachan and I am a B.Tech IT student expected to graduate in 2025. I am passionate about web development and have honed my skills in this area. I enjoy creating dynamic and user-friendly websites that engage audiences and deliver a great user experience.
             <br />
             <br />
 

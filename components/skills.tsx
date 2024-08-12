@@ -18,7 +18,7 @@ function Skills() {
                 </div>
                 <div className='h-[80vh] flex justify-center items-center '>
                     <div className='h-[70vh] w-[70%] flex justify-center sm:pl-0  items-center' >
-                        <div className=' h-[55vh] w-[70%] pr-[15rem] grid sm:grid-rows-3 sm:gap-5 gap-4 grid-rows-5 grid-flow-col g'>
+                        <div className=' h-[55vh] w-[70%] justify-center items-center grid sm:grid-rows-3 sm:gap-5 gap-4 grid-rows-5 grid-flow-col g'>
                             {                               
                                 skills.map((skill,idx)=>{
                                     return(
