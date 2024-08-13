@@ -9,7 +9,7 @@ export default function Footer() {
       <p className="text-xs">
         <span className="font-semibold">About this website:</span> built with
         React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, GSAP, React Email & Resend, Netlify hosting and Fully Developed by Suraj Sachan.
+        Framer Motion, GSAP, React Email & Resend, Vercel hosting and Fully Developed by Suraj Sachan.
       </p>
     </footer>
   );
