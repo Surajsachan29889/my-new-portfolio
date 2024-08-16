@@ -154,7 +154,7 @@ function Timeline() {
   return (
     <div className='h-[200vh] relative overflow-hidden' >
       <div className='flex justify-center items-center'>
-        <h1 className=' font-extrabold text-6xl text-four '> <span className='text-pri'>P</span>rojects</h1>
+        <h1 className=' font-extrabold text-6xl text-four '> <span className='text-pri'>Pesonal</span>Projects</h1>
       </div>
       <div className='sm:w-[.5%] w-[2%] h-[190vh] absolute top-[15vh] left-[50%]  bg-tri'></div>
       <div className=' timeline flex flex-col'>

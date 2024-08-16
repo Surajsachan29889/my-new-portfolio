@@ -94,3 +94,8 @@ body{
 .icon-shadow{
   box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.378);
 }
+@media (min-width: 1024px) {
+  .skill{
+    box-shadow: 7px 7px 20px black;
+  }
+}
